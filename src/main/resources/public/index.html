@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringData Dashboard</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet/SortableTable.css">
+    <script type="text/javascript" src ="javascript/Program.js"></script>
+    <script type="text/javascript" src ="javascript/DynamicTable.js"></script>
+    <script type="text/javascript" src ="javascript/Control.js"></script>
+</head>
+<body onload="loadProgram()">
+<h1>Dashboard for SpringData Project</h1>
+
+<button onclick = "dataFilterer.control.changePage('first')"> &lt &lt </button>
+<button onclick = "dataFilterer.control.changePage(-1)"> &lt </button>
+<span id = "currentPage" > page 1 </span>
+<button onclick = "dataFilterer.control.changePage(1)"> &gt </button>
+<button onclick = "dataFilterer.control.changePage('last')"> &gt &gt </button>
+
+<div id = "table"> Loading Example Dataset... </div>
+<br />
+Add new entry:
+<br />
+<input type="text" id="newTimestamp" value="timestamp">
+<input type="text" id="newCountryCode" value="country code">
+<input type="text" id="newResponseTime" value="response time">
+<button onclick="dataFilterer.control.postEntry()">Submit new entry</button>
+</body>
+</html>

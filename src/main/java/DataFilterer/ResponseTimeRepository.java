@@ -14,5 +14,5 @@ public interface ResponseTimeRepository
 
     List<ResponseTimeDataObject> findById(@Param("id") long id);
 
-    List<ResponseTimeDataObject> findByRequestTimestamp(@Param("timestamp") int timestamp);
+    //List<ResponseTimeDataObject> findByRequestTimestamp(@Param("timestamp") int timestamp);
 }

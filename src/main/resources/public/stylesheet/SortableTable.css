@@ -1,0 +1,32 @@
+body {
+    font-family: Arial,sans-serif;
+    background: #e9f9fb;
+}
+#sortableTable {
+	border-collapse: collapse;
+	background-color: #fff;
+	table-layout: fixed;
+	width: 100%;
+}
+#sortableTable td, #sortableTable th {
+	border: 1px solid #ddd;
+	padding: 4px;
+}
+#sortableTable tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+#sortableTable tr:hover {
+	background-color: #dde;
+}
+
+#sortableTable th {
+	background-color:#44f;
+	color: white;
+	cursor: pointer;
+}
+#sortableTable th:hover{
+	background-color: #292;
+}
+#sortableTable th:active {
+    background-color: #4d4;
+}
