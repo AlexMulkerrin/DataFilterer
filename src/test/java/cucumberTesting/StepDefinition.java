@@ -29,10 +29,12 @@ public class StepDefinition {
         driver.get("localhost:8080");
     }
 
-    @Then("^There should be a submit button")
-    public void see_submit() {
+    @Then("^There should be a table element$")
+    public void see_table() {
         WebElement submitButton = driver.findElement(By.id("table"));
         Assert.assertNotNull(submitButton);
+
+        //driver.findElements();
 
         driver.close();
     }

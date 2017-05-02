@@ -10,18 +10,18 @@ public class ResponseTimeDataObject {
 
 
 
-    @Column(name = "request_timestamp")
+    //@Column(name = "request_timestamp")
     private int request_timestamp;
 
     private String country_code;
     private int response_time;
 
-    public int getRequestTimestamp() {
+    public int getRequest_timestamp() {
         return request_timestamp;
     }
 
-    public void setRequestTimestamp(int requestTimestamp) {
-        this.request_timestamp = requestTimestamp;
+    public void setRequest_timestamp(int request_timestamp) {
+        this.request_timestamp = request_timestamp;
     }
 
     public String getCountry_code() {
