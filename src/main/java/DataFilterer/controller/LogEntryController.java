@@ -36,6 +36,7 @@ public class LogEntryController {
     }
 
     @PostMapping(value="/create")
+    @ResponseBody
     public LogEntry postResponseTimeDataObject(@RequestBody LogEntry logEntry){
         return logEntryServiceImpl.createLogEntry(logEntry);
 
