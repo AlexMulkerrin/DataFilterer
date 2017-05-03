@@ -6,7 +6,7 @@ function loadProgram() {
 }
 
 function Program() {
-	this.loadJSON("responsetimes");
+	this.loadJSON("logs");
 	this.table = new DynamicTable();
 	this.control = new Control(this.table, this);
 }

@@ -1,7 +1,7 @@
 package DataFilterer.service;
 
 import DataFilterer.model.LogEntry;
-import DataFilterer.LogEntryRepository;
+import DataFilterer.persistence.LogEntryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,4 +29,17 @@ public class LogEntryServiceImpl implements LogEntryService {
         return logEntryRepository.save(logEntry);
 
     }
+
+    @Override
+    public Iterable<LogEntry> getLogEntriesGreaterThan(int responseTime) {
+        return logEntryRepository.findByResponseTimeGreaterThan(responseTime);
+
+    }
+
+    @Override
+    public Iterable<LogEntry> getAboveAverage() {
+        return logEntryRepository.findAboveAverageResponseTime();
+
+    }
+
 }

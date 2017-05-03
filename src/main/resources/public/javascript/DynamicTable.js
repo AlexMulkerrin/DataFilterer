@@ -96,7 +96,7 @@ DynamicTable.prototype.setContents = function(jsonData) {
 
 	// TODO filter this so it's only the attributes we're interested in :)
 	this.contents = [];
-	var responseTimes = jsonData._embedded.responsetimes;
+	var responseTimes = jsonData;//._embedded.responsetimes;
 	var key = Object.keys(responseTimes[0]);
 	for (var i=0; i<responseTimes.length; i++) {
 		this.contents[i] = {};
@@ -108,11 +108,11 @@ DynamicTable.prototype.setContents = function(jsonData) {
 	}
 
 	//populate the information about dataset size
-	this.entriesPerPage = jsonData.page.size;
-    this.currentPage = jsonData.page.number;
-    this.maxPage = jsonData.page.totalPages-1;
-    this.totalElements = jsonData.page.totalElements;
-    console.log(this.entriesPerPage+", "+this.currentPage+", "+this.maxPage+", "+this.totalElements);
+	//this.entriesPerPage = jsonData.page.size;
+    //this.currentPage = jsonData.page.number;
+    //this.maxPage = jsonData.page.totalPages-1;
+    //this.totalElements = jsonData.page.totalElements;
+    //console.log(this.entriesPerPage+", "+this.currentPage+", "+this.maxPage+", "+this.totalElements);
 
 
 	//this.contents = jsonData._embedded.responsetimes;

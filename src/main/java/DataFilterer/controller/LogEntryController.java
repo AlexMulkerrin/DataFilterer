@@ -29,10 +29,22 @@ public class LogEntryController {
         return logEntryServiceImpl.getLogEntriesByCountryCode(countryCode);
     }
 
+    @GetMapping(value="/responseTimeGreater/{time}")
+    @ResponseBody
+    public Iterable<LogEntry> getByResponseTimeGreater(@PathVariable int time){
+        return logEntryServiceImpl.getLogEntriesGreaterThan(time);
+    }
+
     @PostMapping(value="/create")
     public LogEntry postResponseTimeDataObject(@RequestBody LogEntry logEntry){
         return logEntryServiceImpl.createLogEntry(logEntry);
 
+    }
+
+    @GetMapping(value="/aboveAverage")
+    @ResponseBody
+    public Iterable<LogEntry> getAboveAverage(){
+        return logEntryServiceImpl.getAboveAverage();
     }
 
 }
