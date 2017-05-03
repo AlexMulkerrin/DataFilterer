@@ -141,9 +141,9 @@ DynamicTable.prototype.tabulateObjectList = function(inStart, inEnd) {
 	var key = Object.keys(list[0]);
 	for (var i=0; i<key.length; i++) {
 
-		var headerText = key[i].split("_")
-			.map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
-			.join(" ");
+		var headerText = key[i];//.split("_")
+			//.map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
+			//.join(" ");
 
 		out +="<th class='coloumHeader' title='sort by column'";
 		out += "onclick='"+methodPath+"(\""+key[i]+"\")'>" ;
@@ -179,11 +179,11 @@ DynamicTable.prototype.tabulateObjectList = function(inStart, inEnd) {
 DynamicTable.prototype.getHumanFormatting = function(key, value) {
 	var result = "";
 	switch(key) {
-		case 'request_timestamp':
+		case 'requestTimestamp':
 			var elapsedMilli = new Date(parseInt(value)*1000);
 			result = elapsedMilli.toUTCString();
 			break;
-		case 'country_code':
+		case 'countryCode':
 			var fullName = countryCodes[value];
 			result = fullName || 'unknown';
 			break;

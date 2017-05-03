@@ -25,7 +25,7 @@ Control.prototype.postEntry = function() {
 
 	console.log("TODO");
 
-	name = "responsetimes";
+	name = "logs/create";
 	var t = this;
 	var request = new XMLHttpRequest();
 	request.open("POST", name);
@@ -36,7 +36,7 @@ Control.prototype.postEntry = function() {
 	var code = document.getElementById('newCountryCode').value;
 	var inputResponseTime = parseInt(document.getElementById('newResponseTime').value);
 	var time = inputResponseTime || 0;
-	var body = { request_timestamp:timestamp, country_code:code, response_time:time };
+	var body = { requestTimestamp:timestamp, countryCode:code, responseTime:time };
 
 	var jsonBody = JSON.stringify(body);
 	console.log(body);
