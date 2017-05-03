@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="279ef126-46ce-4cba-a3d1-1c06a8258909" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataFilterer/Application.class" afterPath="$PROJECT_DIR$/target/classes/DataFilterer/Application.class" />
+    <list default="true" id="279ef126-46ce-4cba-a3d1-1c06a8258909" name="Default" comment="added .gitignore">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataFilterer/controller/LogEntryController.java" afterPath="$PROJECT_DIR$/src/main/java/DataFilterer/controller/LogEntryController.java" />
     </list>
     <list id="9a42368a-9533-486e-8071-9034b6d7e17b" name="added mega dataset and fixed data representation" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,10 +36,12 @@
       <file leaf-file-name="LogEntryController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataFilterer/controller/LogEntryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="711">
+              <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1625#1626#0" expanded="true" />
+                <element signature="e#1660#1661#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/DataFilterer/service/LogEntryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
-              <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+              <caret line="40" column="65" lean-forward="false" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -71,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/javascript/Control.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
-              <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+              <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -81,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/javascript/Program.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+              <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -137,9 +139,9 @@
         <option value="$PROJECT_DIR$/src/main/java/DataFilterer/service/LogEntryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataFilterer/LogEntryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataFilterer/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataFilterer/controller/LogEntryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataFilterer/persistence/LogEntryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataFilterer/service/LogEntryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataFilterer/controller/LogEntryController.java" />
       </list>
     </option>
   </component>
@@ -882,7 +884,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493820472830</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added .gitignore">
+      <created>1493820506427</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1493820506427</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -993,7 +1002,8 @@
     <MESSAGE value="avoid uploading huge dataset file??" />
     <MESSAGE value="James Rooney's improved codebase layout" />
     <MESSAGE value="Added more complex endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more complex endpoints" />
+    <MESSAGE value="added .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1031,6 +1041,8 @@
           <caret line="48" column="74" lean-forward="false" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1115,6 +1127,8 @@
           <caret line="48" column="74" lean-forward="true" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1324,7 +1338,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/javascript/Program.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1332,7 +1346,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/javascript/Control.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
-          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1350,17 +1364,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/DataFilterer/service/LogEntryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
-          <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+          <caret line="40" column="65" lean-forward="false" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataFilterer/controller/LogEntryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state relative-caret-position="711">
+          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
           </folding>
         </state>
       </provider>

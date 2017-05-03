@@ -48,4 +48,10 @@ public class LogEntryController {
         return logEntryServiceImpl.getAboveAverage();
     }
 
+    @DeleteMapping(value="/delete")
+    @ResponseBody
+            public String deleteLogEntry() {
+        return "Error Todo";
+    }
+
 }
