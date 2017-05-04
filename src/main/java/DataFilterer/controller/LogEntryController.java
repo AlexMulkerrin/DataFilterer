@@ -3,6 +3,8 @@ package DataFilterer.controller;
 import DataFilterer.model.LogEntry;
 import DataFilterer.service.LogEntryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,10 +50,11 @@ public class LogEntryController {
         return logEntryServiceImpl.getAboveAverage();
     }
 
-    @DeleteMapping(value="/delete")
+    @DeleteMapping(value="/delete/{id}")
     @ResponseBody
-            public String deleteLogEntry() {
-        return "Error Todo";
+    public ResponseEntity deleteLogEntry(@PathVariable long id) {
+        logEntryServiceImpl.deleteLogEntry(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 }

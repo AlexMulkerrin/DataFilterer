@@ -12,4 +12,6 @@ public interface LogEntryService {
     public Iterable<LogEntry> getLogEntriesGreaterThan(int responseTime);
 
     public Iterable<LogEntry> getAboveAverage();
+
+    public void deleteLogEntry(Long id);
 }

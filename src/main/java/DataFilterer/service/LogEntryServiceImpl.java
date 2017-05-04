@@ -42,4 +42,9 @@ public class LogEntryServiceImpl implements LogEntryService {
 
     }
 
+    @Override
+    public void deleteLogEntry(Long id) {
+        logEntryRepository.delete(id);
+    }
+
 }
